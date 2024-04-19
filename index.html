@@ -1349,6 +1349,16 @@
           }
         });
       });
+
+      let docTitle = document.title;
+      window.addEventListener("blur", () => {
+        document.title = "Come back!";
+      });
+
+      window.addEventListener("focus", () => {
+        document.title = docTitle;
+      });
+    
     </script>
     <script src="assets/js/jquery-1.12.4.min.js"></script>
     <script src="assets/js/jquery.slick.min.js"></script>
