@@ -1,6 +1,6 @@
 <?php
 
-$to 		= 'demo@demo.com';
+$to 		= 'emadadil999@gmail.com';
 $headers	= 'FROM: "'.$email.'"';
 
 //All form values
@@ -11,3 +11,4 @@ $msg 		= $_POST['msg'];
 $output 	= "Name: ".$name."\nEmail: ".$email."\nSubject: ".$subject."\n\nMessage: ".$msg;
 
 $send		= mail($to, $name, $output, $headers);
+ >?
