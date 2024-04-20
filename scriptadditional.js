@@ -41,9 +41,23 @@ document.addEventListener("DOMContentLoaded", function () {
     Subject : document.getElementById("subject").value,
     Body : bodyMessage
 }).then(
-    message => alert("mail sent successfully")
+  message => {
+    alert("Mail sent successfully");
+    clearForm();
+},
+error => {
+    alert("Failed to send mail: " + error);
+    console.error("Email send error:", error);
+}
 );
-    }
+}
+
+function clearForm() {
+document.getElementById("name").value = '';
+document.getElementById("email").value = '';
+document.getElementById("subject").value = '';
+document.getElementById("msg").value = '';
+}
    
     form.addEventListener("submit", (e)=>{
         e.preventDefault();
