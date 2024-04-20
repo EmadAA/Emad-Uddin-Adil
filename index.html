@@ -180,7 +180,7 @@
                     </p>
                   </div>
                   <ul class="st-text-block-details st-mp0">
-                    <li><span>Birthday</span> : <span>July 02, 2001</span></li>
+                    <!-- <li><span>Birthday</span> : <span>July 02, 2001</span></li> -->
                     <li><span>Phone</span> : <span>+880 1727 199 167</span></li>
                     <li>
                       <span>Email</span> : <span>emadadil999@gmail.com</span>
@@ -188,7 +188,7 @@
                     <li>
                       <span>From</span> :
                       <span
-                        >Shibgonj Sunarpara Nobarun-140 Sylhet Bangladesh</span
+                        >Shibgonj Sylhet-3100, Bangladesh</span
                       >
                     </li>
                     <li>
@@ -1129,7 +1129,8 @@
           <div class="col-lg-6">
             <h3 class="st-contact-title">Just say Hello</h3>
             <div id="st-alert"></div>
-            <form
+            <form 
+            
               action="#"
               method="POST"
               class="st-contact-form"
@@ -1146,7 +1147,7 @@
               </div>
               <div class="st-form-field">
                 <input
-                  type="text"
+                  type="email"
                   id="email"
                   name="email"
                   placeholder="Your Email"
@@ -1173,9 +1174,10 @@
                 ></textarea>
               </div>
               <button
+              
                 class="st-btn st-style1 st-color1"
                 type="submit"
-                id="submit"
+                id="submit-btn"
                 name="submit"
               >
                 Send message
@@ -1332,33 +1334,9 @@
 
     <!-- Scripts -->
 
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        let portfolioVisible = document.getElementById("portfolio-visible");
-        let LoadMore = document.querySelector(".load-more-btn");
-
-        portfolioVisible.style.display = "none";
-
-        LoadMore.addEventListener("click", function () {
-          if (portfolioVisible.style.display === "none") {
-            portfolioVisible.style.display = "block";
-            LoadMore.innerHTML = "Load Less";
-          } else {
-            portfolioVisible.style.display = "none";
-            LoadMore.innerHTML = "Load More";
-          }
-        });
-      });
-
-      let docTitle = document.title;
-      window.addEventListener("blur", () => {
-        document.title = "Come back!";
-      });
-
-      window.addEventListener("focus", () => {
-        document.title = docTitle;
-      });
-    
+    <script src="scriptadditional.js">
+    </script>
+    <script src="https://smtpjs.com/v3/smtp.js">
     </script>
     <script src="assets/js/jquery-1.12.4.min.js"></script>
     <script src="assets/js/jquery.slick.min.js"></script>
@@ -1367,5 +1345,8 @@
     <script src="assets/js/ripples.min.js"></script>
     <script src="assets/js/particles.min.js"></script>
     <script src="assets/js/main.js"></script>
+    
+    
+    
   </body>
 </html>
