@@ -895,6 +895,7 @@ canvas {
 .st-btn.st-style2.st-color1:hover {
   background-color: #fec544;
   color: #070d1b;
+  cursor: pointer;
 }
 .st-btn.st-style1.st-color1:hover {
   background-color: #070d1b;
@@ -2461,4 +2462,9 @@ canvas {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+}
+footer {
+  display: block;
+  text-align: center;
+  margin-bottom: 20px;
 }
