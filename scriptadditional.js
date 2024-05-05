@@ -64,3 +64,6 @@ document.getElementById("msg").value = '';
         emailSend();
     });
 
+   function blogPageAlert(){
+    alert("This page is under construction. Thanks for visiting!");
+   }
