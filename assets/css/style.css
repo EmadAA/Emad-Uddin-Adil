@@ -2401,7 +2401,14 @@ canvas {
 }
 .st-social-info .st-social-text {
   margin-top: 0;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: 500;
+  padding-top: 5px;
+}
+.st-social-text2 {
+  margin-top: 20px;
+  margin-bottom: 15px;
   font-size: 20px;
   font-weight: 500;
   padding-top: 5px;
